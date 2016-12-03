@@ -57,7 +57,7 @@ public class ExampleUnitTest {
                         for (int x = 0; x < ddeals.getLength(); x++) {
                             Element drinkDeal = (Element) ddeals.item(x);
                             //System.out.println("\t\tDrink:" + DrinkDeal.getTextContent());
-                            f.addDrink(drinkDeal.getTextContent());
+                            f.addDrink(drinkDeal.getAttribute("name"));
                         }
                     }
                 }
@@ -77,7 +77,7 @@ public class ExampleUnitTest {
 
     @Test
     public void test1() throws Exception{
-        String restaurant = "Hokie House";
+        String restaurant = "Champs";
         ArrayList<FullDeal> AllDeals = new ArrayList<FullDeal>();
 
         try {
@@ -116,7 +116,13 @@ public class ExampleUnitTest {
                                 for (int x = 0; x < ddeals.getLength(); x++) {
                                     Element DrinkDeal = (Element) ddeals.item(x);
                                     //System.out.println("\t\tDrink:" + DrinkDeal.getTextContent());
-                                    f.addDrink(DrinkDeal.getTextContent());
+                                    f.addDrink(DrinkDeal.getAttribute("name"));
+
+                                    NodeList details = DrinkDeal.getElementsByTagName("Detail");
+                                    for(int m = 0; m < details.getLength(); m++){
+                                        f.addDrinkDetails(details.item(m).getTextContent());
+                                        //System.out.println(details.item(m).getTextContent());
+                                    }
                                 }
                             }
                         }
@@ -137,19 +143,19 @@ public class ExampleUnitTest {
 
     public String setDay(int newDay){
         switch (newDay){
-            case 1: return "Monday";
+            case 1: return "Sunday";
 
-            case 2: return "Tuesday";
+            case 2: return "Monday";
 
-            case 3: return "Wednesday";
+            case 3: return "Tuesday";
 
-            case 4: return "Thursday";
+            case 4: return "Wednesday";
 
-            case 5: return "Friday";
+            case 5: return "Thursday";
 
-            case 6: return "Saturday";
+            case 6: return "Friday";
 
-            case 7: return "Sunday";
+            case 7: return "Saturday";
 
         }
         return null;
