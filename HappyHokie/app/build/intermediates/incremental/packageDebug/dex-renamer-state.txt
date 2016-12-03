@@ -1,0 +1,7 @@
+#Sat Dec 03 14:09:29 EST 2016
+base.0=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_66677054d586997c2fc398aad24e7278247624a3
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_c49bbf301c34097a56bf1fe8a161b599359b2123\\classes.dex
+base.1=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_c49bbf301c34097a56bf1fe8a161b599359b2123
+file.0=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_66677054d586997c2fc398aad24e7278247624a3\\classes.dex
