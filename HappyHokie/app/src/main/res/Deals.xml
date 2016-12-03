@@ -1,0 +1,66 @@
+<Blacksburg>
+    <Restaurant id="Hokie House">
+        <Day id="Monday">
+            <Food>$6.50 Jumbo Wing special(11:00am-11:00pm)</Food>
+            <Drink>Happy Hour(5:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Tuesday">
+            <Food>20% off burgers(11:00am-11:55pm)</Food>
+            <Drink>Happy Hour(5:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Wednesday">
+            <Food>20% off sandwiches(11:00am-11:55pm)</Food>
+            <Drink>Happy Hour(5:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Thursday">
+            <Food>20% off appetizer(11:00am-11:00pm)</Food>
+            <Drink>Happy Hour(5:00pm-9:00pm)</Drink>
+            <Drink>Pint Night(5:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Friday">
+            <Food>Free french fries w/ burger(11:00am-11:00pm)</Food>
+            <Drink>Happy Hour(5:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Saturday">
+            <Food>$5.99/$9.99 Nacho deal(11:00am-11:00pm)</Food>
+            <Drink>Happy Hour(5:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Sunday">
+            <Food>$6.50 Jumbo Wing special(11:00am-11:00pm)</Food>
+            <Drink>Happy Hour(12:00am-9:00pm)</Drink>
+        </Day>
+    </Restaurant>
+    <Restaurant id="Champs">
+        <Day id="Monday">
+            <Food>$1 burgers/hot dogs(4:00pm-9:00)</Food>
+            <Drink>Happy Hour(4:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Tuesday">
+            <Food>$1.50 off burgers(4:00pm-9:00pm)</Food>
+            <Drink>Happy Hour(4:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Wednesday">
+            <Food>$2.00 chilli bowl(4:00pm-9:00pm)</Food>
+            <Drink>Happy Hour(4:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Thursday">
+            <Food>40-cent wings and $3.00 anything that starts with "J"(4:00pm-9:00pm)</Food>
+            <Drink>Happy Hour(4:00pm-9:00pm)</Drink>
+        </Day>
+        <Day id="Friday">
+            <Food>$3.99 Appetizers(4:00am-9:00pm)</Food>
+            <Drink>Happy Hour(4:00pm-9:00pm))</Drink>
+        </Day>
+        <Day id="Saturday">
+            <Food>40-wings(4:00pm-2:00am)</Food>
+            <Drink>Happy Hour(4:00pm-9:00pm))</Drink>
+        </Day>
+        <Day id="Sunday">
+            <Food>40-wings(4:00pm-9:00pm)</Food>
+            <Drink>Happy Hour(4:00pm-9:00pm)</Drink>
+        </Day>
+    </Restaurant>
+
+
+
+</Blacksburg>
