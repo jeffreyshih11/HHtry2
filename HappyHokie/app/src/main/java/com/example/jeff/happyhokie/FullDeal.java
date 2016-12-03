@@ -20,6 +20,7 @@ public class FullDeal {
     String sDay;
     ArrayList<String> FoodDeals = new ArrayList<String>();
     ArrayList<String> DrinkDeals = new ArrayList<String>();
+    ArrayList<String> drinkDetails = new ArrayList<String>();
 
     public FullDeal(String rest, String day){
         restaurant = rest;
@@ -51,14 +52,24 @@ public class FullDeal {
     }
 
 
+    public void addDrinkDetails(String s){
+        drinkDetails.add(s);
+    }
     public String toString(){
         String s = "";
         s += "Restaurant: " + restaurant + "\n";
+        s += "\tDay: " + sDay + "\n";
         for(String x: FoodDeals){
             s+= "\tFood: " + x + "\n";
         }
         for(String y: DrinkDeals){
             s+= "\tDrink: " + y + "\n";
+        }
+        if (drinkDetails.size() != 0){
+            s+= "\t\tDrink Details:\n";
+            for(int i = 0; i < drinkDetails.size(); i++){
+                s+= "\t\t" + drinkDetails.get(i) + "\n";
+            }
         }
         return s;
     }
