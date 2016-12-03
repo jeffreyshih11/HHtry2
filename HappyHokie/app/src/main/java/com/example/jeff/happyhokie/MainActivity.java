@@ -1,6 +1,6 @@
 package com.example.jeff.happyhokie;
 /**
- * Created by Jeffery
+ * Created by Jeff
  * Main activity for our project.  Contains our expandable listview and is the main screen of the
  * application
  */
@@ -36,9 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getApplicationContext(),
-                        expandableListTitle.get(groupPosition) + " List Expanded.",
-                        Toast.LENGTH_SHORT).show();
+              //What happens when a group is expanded
             }
         });
 
@@ -46,25 +44,19 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getApplicationContext(),
-                        expandableListTitle.get(groupPosition) + " List Collapsed.",
-                        Toast.LENGTH_SHORT).show();
+                //What happens when a group is collapsed
 
             }
         });
-
+        /*
+         *
+         */
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
-                Toast.makeText(
-                        getApplicationContext(),
-                        expandableListTitle.get(groupPosition)
-                                + " -> "
-                                + expandableListDetail.get(
-                                expandableListTitle.get(groupPosition)).get(
-                                childPosition), Toast.LENGTH_SHORT
-                ).show();
+
+                //TODO: Intent to more details page
                 return false;
             }
         });
