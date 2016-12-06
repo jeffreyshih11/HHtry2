@@ -41,7 +41,16 @@ public class FullDeal {
         return DrinkDeals;
     }
 
-
+    public List<SingleDeal> getAllDeals() {
+        List<SingleDeal> deals = new ArrayList<SingleDeal>();
+        for(int i = 0;i<DrinkDeals.size();i++) {
+            deals.add(DrinkDeals.get(i));
+        }
+        for(int i = 0;i<FoodDeals.size();i++) {
+            deals.add(FoodDeals.get(i));
+        }
+        return deals;
+    }
     //populate food deals
     public void addFood(String deal){
         SingleDeal newDeal = new SingleDeal(deal);

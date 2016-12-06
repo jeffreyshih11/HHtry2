@@ -104,12 +104,12 @@
         "source": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
         "source": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow_custom.xml",

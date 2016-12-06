@@ -43,7 +43,8 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
     @Override
     public Object getChild(int listPosition, int expandedListPosition) {
-        return this.dealList.get(listPosition);
+
+        return this.dealList.get(listPosition).getAllDeals().get(expandedListPosition);
     }
     //    @Override
 //    public Object getChild(int listPosition, int expandedListPosition) {
@@ -58,7 +59,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getChildView(int listPosition, final int expandedListPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
-        final String expandedListText = (String) getChild(listPosition, expandedListPosition);
+//        final String expandedListText = (String) getChild(listPosition, expandedListPosition);
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -66,15 +67,18 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         }
         TextView expandedListTextView = (TextView) convertView
                 .findViewById(R.id.expandedListItem);
-        String deal = dealList.get(listPosition).getRestaurant();
+
+
         //TODO actually load in deals here
-        expandedListTextView.setText(deal);
+        SingleDeal deal = (SingleDeal) getChild(listPosition,expandedListPosition);
+
+        expandedListTextView.setText(deal.getName());
         return convertView;
     }
 
     @Override
     public int getChildrenCount(int listPosition) {
-        return this.dealList.size();
+        return this.dealList.get(listPosition).getAllDeals().size();
     }
 
     @Override
