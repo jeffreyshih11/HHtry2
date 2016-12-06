@@ -4,6 +4,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -18,7 +20,7 @@ public class DealGetter {
 
     String sDay;
     Document xml;
-    public DealGetter(int day) {
+    public DealGetter(int day, InputStream f) {
 
         sDay = setDay(day);
 
@@ -26,12 +28,13 @@ public class DealGetter {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = dbFactory.newDocumentBuilder();
             //will have to change the path to file
-            Document document = documentBuilder.parse("C:\\Users\\Jeff\\Documents\\jeffrey\\school\\senior\\design\\happy hokie\\HappyHokie\\app\\src\\main\\res\\Deals.xml");
+
+            Document document = documentBuilder.parse(f);
             document.getDocumentElement().normalize();
             xml = document;
         }
         catch(Exception e){
-            System.out.println("fucked up");
+            System.out.println("fucked up " + e.getStackTrace());
         }
     }
 
