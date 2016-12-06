@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
         InputStream data = getResources().openRawResource(R.raw.data);
         DealGetter dealGetter = new DealGetter(day, data);
         ArrayList<FullDeal> dealList = dealGetter.getAllDeals();
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);

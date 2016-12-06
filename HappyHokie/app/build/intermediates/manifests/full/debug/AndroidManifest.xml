@@ -10,8 +10,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@raw/bird"
         android:label="@string/app_name"
+        android:logo="@raw/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.jeff.happyhokie.MainActivity" >

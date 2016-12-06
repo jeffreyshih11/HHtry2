@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\merged\\debug\\raw\\logo.jpg",
+        "source": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\src\\main\\res\\raw\\logo.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\merged\\debug\\raw\\bird.jpg",
+        "source": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\src\\main\\res\\raw\\bird.jpg"
+    },
+    {
         "merged": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\merged\\debug\\raw\\data.xml",
         "source": "C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\src\\main\\res\\raw\\data.xml"
     }

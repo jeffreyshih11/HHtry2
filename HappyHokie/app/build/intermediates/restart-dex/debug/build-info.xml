@@ -5,40 +5,33 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="204172115020913"
+    timestamp="207886568127844"
     token="-8615197510823068858"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="233" />
+        duration="267" />
     <task
         name="instant-run-dex"
-        duration="21" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="25" />
+        duration="80" />
     <task
         name="verifier"
-        duration="2" />
+        duration="4" />
 
     <artifact
-        location="C:\Users\Owner\Desktop\Capstone\HHtry2\HappyHokie\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\Owner\Desktop\Capstone\HHtry2\HappyHokie\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="203294407580675"
+        timestamp="207886568127844"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Owner\Desktop\Capstone\HHtry2\HappyHokie\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="204172115020913"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Owner\Desktop\Capstone\HHtry2\HappyHokie\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

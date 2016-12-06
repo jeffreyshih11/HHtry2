@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Dec 05 21:57:42 EST 2016
+#Mon Dec 05 23:21:20 EST 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
@@ -15,6 +15,7 @@
 107.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 159.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 125.set=ANDROID_RESOURCE
+211.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 80.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png
 134.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 186.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -51,7 +52,7 @@
 21.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 17.set=ANDROID_RESOURCE
 73.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
-204.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_screen_simple.xml
+204.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\bird.jpg
 127.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_primary_text_material_dark.xml
 63.set=ANDROID_RESOURCE
 6.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -70,6 +71,7 @@
 54.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png
 108.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 135.set=ANDROID_RESOURCE
+212.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 81.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_action_bar_up_container.xml
 135.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 187.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -106,7 +108,7 @@
 22.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 27.set=ANDROID_RESOURCE
 74.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
-205.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png
+205.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_screen_simple.xml
 128.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_3\\classes.dex
 73.set=ANDROID_RESOURCE
 7.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -159,7 +161,7 @@
 37.set=ANDROID_RESOURCE
 75.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 50.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
-206.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png
+206.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\logo.jpg
 129.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_secondary_text_material_dark.xml
 83.set=ANDROID_RESOURCE
 8.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -217,7 +219,7 @@
 47.set=ANDROID_RESOURCE
 76.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 51.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
-207.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png
+207.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png
 93.set=ANDROID_RESOURCE
 204.set=ANDROID_RESOURCE
 9.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-25.0.0_6a93f8662c2495455fbc86447866457160be62f1
@@ -228,6 +230,7 @@
 54.set=ANDROID_RESOURCE
 184.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_alert_dialog_button_bar_material.xml
 158.set=ANDROID_RESOURCE
+211.set=ANDROID_RESOURCE
 15.set=DEX
 119.set=ANDROID_RESOURCE
 61.set=ANDROID_RESOURCE
@@ -273,11 +276,11 @@
 57.set=ANDROID_RESOURCE
 77.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 52.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
-208.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png
+208.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png
 106.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png
 18.set=DEX
 158.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_hint_foreground_material_dark.xml
-210.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png
+210.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png
 133.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_ic_voice_search_api_material.xml
 64.set=ANDROID_RESOURCE
 185.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
@@ -327,11 +330,12 @@
 9.set=DEX
 78.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 53.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-25.0.0_5aa9a4abcfc6a2665d8b042f8c3225bacf7bda0b
-209.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_big_media_custom.xml
+209.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png
 107.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_vector_test.xml
 28.set=ANDROID_RESOURCE
 80.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 159.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_ic_search_api_material.xml
+211.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_big_media_custom.xml
 134.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_list_menu_item_layout.xml
 74.set=ANDROID_RESOURCE
 186.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_switch_thumb_material.xml
@@ -376,7 +380,7 @@
 6.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v21\\notification_template_icon_group.xml
 181.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 121.set=ANDROID_RESOURCE
-count=211
+count=213
 27.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
 77.set=ANDROID_RESOURCE
 79.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -385,6 +389,7 @@ count=211
 108.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-hdpi-v4\\ic_launcher.png
 38.set=ANDROID_RESOURCE
 81.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
+212.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png
 135.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color-v23\\abc_tint_switch_track.xml
 84.set=ANDROID_RESOURCE
 187.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png
@@ -451,6 +456,7 @@ count=211
 55.set=ANDROID_RESOURCE
 190.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_list_selector_holo_dark.xml
 159.set=ANDROID_RESOURCE
+212.set=ANDROID_RESOURCE
 16.set=DEX
 36.file=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_primary_text_material_light.xml
 67.base=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\res\\resources-debug.ap_
