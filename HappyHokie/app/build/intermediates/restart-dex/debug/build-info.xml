@@ -5,29 +5,29 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="1976244055211"
+    timestamp="201107052849044"
     token="-8615197510823068858"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="4566" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="427" />
+        duration="0" />
     <task
         name="verifier"
-        duration="48" />
+        duration="0" />
 
     <artifact
         location="C:\Users\Owner\Desktop\Capstone\HHtry2\HappyHokie\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="1976244055211"
+        timestamp="201107052849044"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Owner\Desktop\Capstone\HHtry2\HappyHokie\app\build\outputs\apk\app-debug.apk"

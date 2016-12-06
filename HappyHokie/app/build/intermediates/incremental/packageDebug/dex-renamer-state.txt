@@ -1,4 +1,4 @@
-#Sat Dec 03 14:09:29 EST 2016
+#Mon Dec 05 21:28:20 EST 2016
 base.0=C\:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_66677054d586997c2fc398aad24e7278247624a3
 renamed.1=classes2.dex
 renamed.0=classes.dex

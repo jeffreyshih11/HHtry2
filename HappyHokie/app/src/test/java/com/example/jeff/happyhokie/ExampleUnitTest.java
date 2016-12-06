@@ -18,6 +18,7 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
+
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
@@ -26,7 +27,7 @@ public class ExampleUnitTest {
 
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = dbFactory.newDocumentBuilder();
-            Document xml = documentBuilder.parse("C:\\Users\\Jeff\\Documents\\jeffrey\\school\\senior\\design\\happy hokie\\HappyHokie\\app\\src\\main\\res\\Deals.xml");
+            Document xml = documentBuilder.parse("C:\\Users\\Owner\\Desktop\\Capstone\\HHtry2\\HappyHokie\\app\\src\\main\\res\\Deals.xml");
 
             //optional, but recommended
             //read this - http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
@@ -41,11 +42,11 @@ public class ExampleUnitTest {
 
                 NodeList children = e.getElementsByTagName("Day");
 
-                for(int i = 0; i < children.getLength(); i++){
+                for (int i = 0; i < children.getLength(); i++) {
                     //System.out.println("\t" + e2.getAttribute("id"));
                     Element e2 = (Element) children.item(i);
 
-                    if(e2.getAttribute("id").equals(sDay)) {
+                    if (e2.getAttribute("id").equals(sDay)) {
                         NodeList fdeals = e2.getElementsByTagName("Food");
                         NodeList ddeals = e2.getElementsByTagName("Drink");
 
@@ -57,7 +58,7 @@ public class ExampleUnitTest {
                         for (int x = 0; x < ddeals.getLength(); x++) {
                             Element drinkDeal = (Element) ddeals.item(x);
                             //System.out.println("\t\tDrink:" + DrinkDeal.getTextContent());
-                            f.addDrink(drinkDeal.getTextContent());
+                            f.addDrink(drinkDeal.getAttribute("name"));
                         }
                     }
                 }
@@ -65,10 +66,10 @@ public class ExampleUnitTest {
                 System.out.print(f.toString());
             }
 
-            assert(true);
+            assert (true);
         } catch (Exception e) {
             System.out.println("Error while processing resource file: " + e.getStackTrace());
-            assert(false);
+            assert (false);
 
         }
 
@@ -76,8 +77,8 @@ public class ExampleUnitTest {
 
 
     @Test
-    public void test1() throws Exception{
-        String restaurant = "Hokie House";
+    public void test1() throws Exception {
+        String restaurant = "Champs";
         ArrayList<FullDeal> AllDeals = new ArrayList<FullDeal>();
 
         try {
@@ -92,7 +93,7 @@ public class ExampleUnitTest {
 
             for (int j = 0 /*nodeList.getLength() - 20*/; j < nodeList.getLength(); j++) {
                 Element e = (Element) nodeList.item(j);
-                if(e.getAttribute("id").equals(restaurant)) {
+                if (e.getAttribute("id").equals(restaurant)) {
                     for (int d = 1; d < 8; d++) {
                         String tempDay = setDay(d);
                         FullDeal f = new FullDeal(e.getAttribute("id"), tempDay);    //restaurant name
@@ -116,7 +117,13 @@ public class ExampleUnitTest {
                                 for (int x = 0; x < ddeals.getLength(); x++) {
                                     Element DrinkDeal = (Element) ddeals.item(x);
                                     //System.out.println("\t\tDrink:" + DrinkDeal.getTextContent());
-                                    f.addDrink(DrinkDeal.getTextContent());
+                                    f.addDrink(DrinkDeal.getAttribute("name"));
+
+                                    NodeList details = DrinkDeal.getElementsByTagName("Detail");
+                                    for (int m = 0; m < details.getLength(); m++) {
+                                        f.addDrinkDetails(details.item(m).getTextContent());
+                                        //System.out.println(details.item(m).getTextContent());
+                                    }
                                 }
                             }
                         }
@@ -125,31 +132,38 @@ public class ExampleUnitTest {
                 }
             }
             //return null;
-            for(FullDeal f: AllDeals){
+            for (FullDeal f : AllDeals) {
                 System.out.println(f.toString());
             }
-            assert(true);
+            assert (true);
         } catch (Exception e) {
             System.out.println("Error while processing resource file: " + e.getStackTrace());
             assert (false);
         }
     }
 
-    public String setDay(int newDay){
-        switch (newDay){
-            case 1: return "Monday";
+    public String setDay(int newDay) {
+        switch (newDay) {
+            case 1:
+                return "Sunday";
 
-            case 2: return "Tuesday";
+            case 2:
+                return "Monday";
 
-            case 3: return "Wednesday";
+            case 3:
+                return "Tuesday";
 
-            case 4: return "Thursday";
+            case 4:
+                return "Wednesday";
 
-            case 5: return "Friday";
+            case 5:
+                return "Thursday";
 
-            case 6: return "Saturday";
+            case 6:
+                return "Friday";
 
-            case 7: return "Sunday";
+            case 7:
+                return "Saturday";
 
         }
         return null;

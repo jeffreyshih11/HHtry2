@@ -12,7 +12,9 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
+import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 
@@ -25,18 +27,33 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
+        Calendar calendar = Calendar.getInstance();
+        int day = calendar.get(Calendar.DAY_OF_WEEK);
+
+        InputStream data = getResources().openRawResource(R.raw.data);
+        DealGetter dealGetter = new DealGetter(day, data);
+        ArrayList<FullDeal> dealList = dealGetter.getAllDeals();
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
-        expandableListDetail = ExpandableListDataPump.getData();
-        expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
-        expandableListAdapter = new CustomExpandableListAdapter(this, expandableListTitle, expandableListDetail);
+        //expandableListDetail = ExpandableListDataPump.getData();
+        for(int i = 0;i<dealList.size();i++) {
+            expandableListTitle = new ArrayList<String>();
+            expandableListTitle.add(dealList.get(i).getRestaurant());
+        }
+        System.out.println(dealList.get(0).getRestaurant());
+        expandableListAdapter = new CustomExpandableListAdapter(this, expandableListTitle, getResources().openRawResource(R.raw.data));
         expandableListView.setAdapter(expandableListAdapter);
         expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
 
             @Override
             public void onGroupExpand(int groupPosition) {
-              //What happens when a group is expanded
+                //What happens when a group is expanded
             }
         });
 

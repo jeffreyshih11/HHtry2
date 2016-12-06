@@ -4,6 +4,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -13,11 +15,12 @@ import javax.xml.parsers.DocumentBuilderFactory;
  * Created by Jeff on 12/2/2016.
  */
 
+//
 public class DealGetter {
 
     String sDay;
     Document xml;
-    public DealGetter(int day) {
+    public DealGetter(int day, InputStream f) {
 
         sDay = setDay(day);
 
@@ -25,12 +28,13 @@ public class DealGetter {
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = dbFactory.newDocumentBuilder();
             //will have to change the path to file
-            Document document = documentBuilder.parse("C:\\Users\\Jeff\\Documents\\jeffrey\\school\\senior\\design\\happy hokie\\HappyHokie\\app\\src\\main\\res\\Deals.xml");
+
+            Document document = documentBuilder.parse(f);
             document.getDocumentElement().normalize();
             xml = document;
         }
         catch(Exception e){
-            System.out.println("fucked up");
+            System.out.println("fucked up " + e.getStackTrace());
         }
     }
 
@@ -64,7 +68,7 @@ public class DealGetter {
                         for (int x = 0; x < ddeals.getLength(); x++) {
                             Element DrinkDeal = (Element) ddeals.item(x);
                             //System.out.println("\t\tDrink:" + DrinkDeal.getTextContent());
-                            f.addDrink(DrinkDeal.getTextContent());
+                            f.addDrink(DrinkDeal.getAttribute("name"));
                         }
                     }
                 }
@@ -113,7 +117,13 @@ public class DealGetter {
                                 for (int x = 0; x < ddeals.getLength(); x++) {
                                     Element DrinkDeal = (Element) ddeals.item(x);
                                     //System.out.println("\t\tDrink:" + DrinkDeal.getTextContent());
-                                    f.addDrink(DrinkDeal.getTextContent());
+                                    f.addDrink(DrinkDeal.getAttribute("name"));
+
+                                    NodeList details = DrinkDeal.getElementsByTagName("Detail");
+                                    for(int m = 0; m < details.getLength(); m++){
+                                        f.addDrinkDetails(details.item(m).getTextContent());
+                                        //System.out.println(details.item(m).getTextContent());
+                                    }
                                 }
                             }
                         }
@@ -133,19 +143,19 @@ public class DealGetter {
     //for refresh or for reuse to get all deals at one place
     public String setDay(int newDay){
         switch (newDay){
-            case 1: return "Monday";
+            case 1: return "Sunday";
 
-            case 2: return "Tuesday";
+            case 2: return "Monday";
 
-            case 3: return "Wednesday";
+            case 3: return "Tuesday";
 
-            case 4: return "Thursday";
+            case 4: return "Wednesday";
 
-            case 5: return "Friday";
+            case 5: return "Thursday";
 
-            case 6: return "Saturday";
+            case 6: return "Friday";
 
-            case 7: return "Sunday";
+            case 7: return "Saturday";
 
         }
         return null;

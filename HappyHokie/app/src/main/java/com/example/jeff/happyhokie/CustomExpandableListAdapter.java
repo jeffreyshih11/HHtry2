@@ -5,10 +5,14 @@ package com.example.jeff.happyhokie;
  * Custom adapter for our expandable listview
  */
 
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import android.content.Context;
 import android.graphics.Typeface;
+import android.renderscript.ScriptGroup;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,20 +24,32 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     private Context context;
     private List<String> expandableListTitle;
     private HashMap<String, List<String>> expandableListDetail;
+    private ArrayList<FullDeal> listODeals;
 
-    public CustomExpandableListAdapter(Context context, List<String> expandableListTitle,
-                                       HashMap<String, List<String>> expandableListDetail) {
+    Calendar calendar = Calendar.getInstance();
+    int day = calendar.get(Calendar.DAY_OF_WEEK);
+    DealGetter dealGetter;
+    ArrayList<FullDeal> dealList;
+
+
+    public CustomExpandableListAdapter(Context context, List<String> expandableListTitle, InputStream data
+    ) {
         this.context = context;
         this.expandableListTitle = expandableListTitle;
-        this.expandableListDetail = expandableListDetail;
+        dealGetter = new DealGetter(day, data);
+        dealList = dealGetter.getAllDeals();
+        //this.expandableListDetail = expandableListDetail;
     }
 
     @Override
     public Object getChild(int listPosition, int expandedListPosition) {
-        return this.expandableListDetail.get(this.expandableListTitle.get(listPosition))
-                .get(expandedListPosition);
+        return this.dealList.get(listPosition);
     }
-
+    //    @Override
+//    public Object getChild(int listPosition, int expandedListPosition) {
+//        return this.dealList.get(this.expandableListTitle.get(listPosition))
+//                .get(expandedListPosition);
+//    }
     @Override
     public long getChildId(int listPosition, int expandedListPosition) {
         return expandedListPosition;
@@ -50,24 +66,25 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         }
         TextView expandedListTextView = (TextView) convertView
                 .findViewById(R.id.expandedListItem);
-        expandedListTextView.setText(expandedListText);
+        String deal = dealList.get(listPosition).getRestaurant();
+        //TODO actually load in deals here
+        expandedListTextView.setText(deal);
         return convertView;
     }
 
     @Override
     public int getChildrenCount(int listPosition) {
-        return this.expandableListDetail.get(this.expandableListTitle.get(listPosition))
-                .size();
+        return this.dealList.size();
     }
 
     @Override
     public Object getGroup(int listPosition) {
-        return this.expandableListTitle.get(listPosition);
+        return this.dealList.get(listPosition);
     }
-
+    //
     @Override
     public int getGroupCount() {
-        return this.expandableListTitle.size();
+        return this.dealList.size();
     }
 
     @Override
@@ -78,7 +95,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int listPosition, boolean isExpanded,
                              View convertView, ViewGroup parent) {
-        String listTitle = (String) getGroup(listPosition);
+        //String listTitle = (String) getGroup(listPosition);
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.
                     getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -86,8 +103,9 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         }
         TextView listTitleTextView = (TextView) convertView
                 .findViewById(R.id.listTitle);
+        String rest2 = dealList.get(listPosition).getRestaurant();
         listTitleTextView.setTypeface(null, Typeface.BOLD);
-        listTitleTextView.setText(listTitle);
+        listTitleTextView.setText(rest2);
         return convertView;
     }
 
@@ -95,7 +113,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     public boolean hasStableIds() {
         return false;
     }
-
+    //
     @Override
     public boolean isChildSelectable(int listPosition, int expandedListPosition) {
         return true;

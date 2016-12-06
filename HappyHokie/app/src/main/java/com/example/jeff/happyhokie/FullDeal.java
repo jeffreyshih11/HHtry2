@@ -18,8 +18,10 @@ public class FullDeal {
 
     String restaurant;
     String sDay;
-    ArrayList<String> FoodDeals = new ArrayList<String>();
-    ArrayList<String> DrinkDeals = new ArrayList<String>();
+    ArrayList<SingleDeal> FoodDeals = new ArrayList<SingleDeal>();
+    ArrayList<SingleDeal> DrinkDeals = new ArrayList<SingleDeal>();
+
+
 
     public FullDeal(String rest, String day){
         restaurant = rest;
@@ -31,37 +33,53 @@ public class FullDeal {
     }
 
     //get food deals
-    public List<String> getFoodDeals(){
+    public List<SingleDeal> getFoodDeals(){
         return FoodDeals;
     }
     //get Drink deals
-    public List<String> getDrinkDeals(){
+    public List<SingleDeal> getDrinkDeals(){
         return DrinkDeals;
     }
 
 
     //populate food deals
     public void addFood(String deal){
-        FoodDeals.add(deal);
+        SingleDeal newDeal = new SingleDeal(deal);
+        FoodDeals.add(newDeal);
     }
 
     //populate drink deals
     public void addDrink(String deal){
-        DrinkDeals.add(deal);
+        SingleDeal newDeal = new SingleDeal(deal);
+        DrinkDeals.add(newDeal);
+    }
+
+
+    public void addDrinkDetails(String s){
+        DrinkDeals.get(DrinkDeals.size()-1).addDetails(s);
     }
 
 
     public String toString(){
         String s = "";
         s += "Restaurant: " + restaurant + "\n";
-        for(String x: FoodDeals){
-            s+= "\tFood: " + x + "\n";
+        s += "\tDay: " + sDay + "\n";
+        for(SingleDeal x: FoodDeals){
+            s+= "\tFood: " + x.getName() + "\n";
         }
-        for(String y: DrinkDeals){
-            s+= "\tDrink: " + y + "\n";
+        for(SingleDeal y: DrinkDeals){
+            s+= "\tDrink: " + y.getName() + "\n";
+            ArrayList<String> deets = y.getDetails();
+            if(deets != null) {
+                for(int n = 0; n < deets.size(); n++){
+                    s+= "\t\t" + deets.get(n) + "\n";
+                }
+            }
         }
+
         return s;
     }
+
 
 
 

@@ -7,8 +7,17 @@ package com.example.jeff.happyhokie;
  import java.util.ArrayList;
  import java.util.HashMap;
  import java.util.List;
+ import java.util.Calendar;
+
 
 public class ExpandableListDataPump {
+    Calendar calendar = Calendar.getInstance();
+    int day = calendar.get(Calendar.DAY_OF_WEEK);
+    //DealGetter dealGetter = new DealGetter(day);
+    //ArrayList<FullDeal> dealList = dealGetter.getAllDeals();
+   // public ArrayList<FullDeal> getListODeals() {
+     //   return dealList;
+   // }
     public static HashMap<String, List<String>> getData() {
         HashMap<String, List<String>> expandableListDetail = new HashMap<String, List<String>>();
 
@@ -16,6 +25,7 @@ public class ExpandableListDataPump {
          * In this block is where we will put xml parsing logic
          * TODO: XML parsing
          */
+
         List<String> cricket = new ArrayList<String>();
         cricket.add("India");
         cricket.add("Pakistan");
