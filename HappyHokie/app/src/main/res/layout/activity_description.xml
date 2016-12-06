@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <TextView
+        android:text="RESTAURANT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/restName"
+        android:layout_weight="0.02"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#660000"/>
+
+    <Button
+        android:text="Get Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getLocButton"
+        android:layout_weight="0.04"
+        android:onClick="loadMap" />
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/expandableListView"
+        android:textColor="#ff6606"
+        android:background="#ffffff"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="1px"
+
+        />
+
+</LinearLayout>
